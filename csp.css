@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Shutterstock_Buravleva_stock-scaled.jpg');
+    background-size: cover; /* Make the background image cover the entire viewport */
+    background-position: center top; /* Adjusted background position */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    width: 97%;
+    max-width: 100%; /* Ensure content does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: justify; /* Justify text */
+    opacity: 1
+    
+    
+}
+.overlay p1 {
+    margin: 1cm; /* Add margin to create space between paragraphs */
+    line-height: 1.5; /* Adjust line-height to increase spacing between lines */
+    font-family: 'Roboto Condensed', sans-serif; /* Set font family to Roboto Condensed */
+    text-shadow: 0 0 10px #ead9da /* Change color and blur radius as needed */
+    
+}
+
+.overlay h2 {
+    font-family: 'Roboto Slab', serif; /* Set font family to Roboto Slab */
+    text-shadow: 0 0 10px #be0619
+}
+.overlay1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 30px;
+    width: 97%;
+    max-width: 100%; /* Ensure content does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: justify; /* Justify text */
+    opacity: 1;
+    margin-top: 20px; /* Add space above */
+  }
+  
+.overlay1 p2 {
+    margin: 1cm; /* Add margin to create space between paragraphs */
+    line-height: 1.5; /* Adjust line-height to increase spacing between lines */
+    font-family: 'Roboto Condensed', sans-serif; /* Set font family to Roboto Condensed */
+    text-shadow: 0 0 10px #ead9da;/* Change color and blur radius as needed */
+}
+
+.overlay1 h3 {
+    font-family: 'Roboto Slab', serif; /* Set font family to Roboto Slab */
+    text-shadow: 0 0 10px #a200ff
+}
+
+
+
+
+header h1 {
+    text-align: center;
+    overflow: hidden; /* Hide overflow to prevent wrapping */
+    white-space: nowrap; /* Prevent wrapping of words */
+    animation: slideIn 5s forwards; /* Animation to slide in the words */
+    text-shadow: 0 0 10px #00cff8
+    
+
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Initial position: start from the right */
+        opacity: 0; /* Initial opacity: invisible */
+    }
+    100% {
+        transform: translateX(0); /* Final position: end at original position */
+        opacity: 1; /* Final opacity: fully visible */
+    }
+}
+
+
+.overlay h2, .overlay p {
+    opacity: 0;
+}
+
+.slide-in-heading {
+    animation: slideInHeading 5s ease-out forwards;
+}
+
+.slide-in-paragraph {
+    animation: slideInParagraph 10s ease-out forwards; /* Slower animation */
+}
+
+@keyframes slideInHeading {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInParagraph {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.overlay h3, .overlay p2 {
+    opacity: 0;
+}
+
+.slide-in-heading1 {
+    animation: slideInHeading1 5s ease-out forwards;
+}
+
+.slide-in-paragraph1 {
+    animation: slideInParagraph1 10s ease-out forwards; /* Slower animation */
+}
+
+@keyframes slideInHeading1 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInParagraph1 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.top-nav {
+    background-color: #f0f0f0; /* Background color for the navigation bar */
+    padding: 10px 20px; /* Padding for the navigation bar */
+    text-align: center; /* Align the links to the center */
+  }
+  
+  .top-nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .top-nav ul li {
+    display: inline-block; /* Display links horizontally */
+    margin-right: 10px; /* Add space between links */
+  }
+  
+  .top-nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+  }
+  
+  .top-nav ul li a:hover {
+    background-color: #45a049; /* Change button background color on hover */
+  }
+  
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for content */
+    z-index: 0;
+    pointer-events: none; /* Ensure content is clickable */
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+

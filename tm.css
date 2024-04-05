@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('tm.jpg');
+  background-size: cover; /* Make the background image cover the entire viewport */
+  background-position: center top; /* Adjusted background position */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  color: rgb(0, 0, 0);
+  padding: 100px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  text-align: center;
+    overflow: hidden; /* Hide overflow to prevent wrapping */
+    white-space: nowrap
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: disc; /* You can change 'disc' to other values like 'circle', 'square', etc. */
+  padding-left: 20px; /* Add some left padding for better appearance */
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px; /* Add margin between list items */
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
